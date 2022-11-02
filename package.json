@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "npx lerna run dev --parallel --stream --scope=@roaster_log/{client,server}",
+    "bootstrap": "npx lerna bootstrap",
+    "clean": "npx lerna clean",
+    "global-install": "npx install lerna -W --dev",
+    "clean-project": "rm -rf packages/*/package-lock.json  && npx lerna clean && npx lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^5.5.4"
+  }
+}
